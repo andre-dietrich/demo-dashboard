@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyses</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-areas: "head head" "aside map" "aside diagram" "footer footer";
+            grid-template-columns: 30rem auto;
+            grid-template-rows: 80px 6fr 4fr 80px;
+            gap: 10px 10px;
+        }
+
+        #map {
+            grid-area: map;
+        }
+
+        #diagram {
+            grid-area: diagram;
+        }
+
+        .mapboxgl-marker {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid gray;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="map"></div>
+        <div id="diagram"></div>
+    </div>
+
+    <script type="module" src="./index.ts"></script>
+</body>
+
+</html>

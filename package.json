@@ -1,0 +1,21 @@
+{
+  "name": "3d-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "npx parcel build src/index.html",
+    "watch": "npx parcel serve src/index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "mapbox-gl": "^2.13.0",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "echarts": "^5.4.1"
+  }
+}
